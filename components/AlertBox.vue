@@ -1,5 +1,5 @@
 <script setup lang="ts">
-type AlertBoxTypes = "error" | "warning" | "success"
+type AlertBoxTypes = "error" | "warning" | "success" |"info"
 
 
 const props = defineProps<{
@@ -11,19 +11,27 @@ const props = defineProps<{
 
 
 <template>
-    <div :class="{red: type === 'error'}"
-    >
+    <div :class="type">
         this is an alert box!
         <slot></slot>
     </div>
 </template>
 
 <style scoped>
-.red {
+.error {
     color: red;
 }
 
-.blue {
+.info {
     color: blue;
 }
+
+.warning {
+    color: orange;
+}
+
+.success {
+    color: green;
+}
+
 </style>
