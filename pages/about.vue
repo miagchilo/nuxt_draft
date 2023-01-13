@@ -3,7 +3,7 @@ definePageMeta({
     // layout:"no-header"
 })
 
-const data = await $fetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,explicit")
+const {data} = await useFetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,explicit")
 </script>
 <template>
     <AboutText></AboutText>
