@@ -6,7 +6,7 @@ definePageMeta({
 // const {data} = await useFetch("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,explicit")
 </script>
 <template>
-    <NuxtLink to="/about/aboutme"><h3>about me</h3></NuxtLink>
+    <NuxtLink to="/products"><h3>about me</h3></NuxtLink>
     <NuxtLink to="/about/whyanoterportfolio">Why Another Portfolio?</NuxtLink>
 
     <AboutText></AboutText>
